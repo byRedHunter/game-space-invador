@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inika', serif;
+}
+
+main {
+	height: 100vh;
+	width: 100%;
+	background: url('../img/galaxy-gb.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.game {
+	padding: 40px 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.game-head {
+}
+.game-head img.title {
+	height: 100px;
+}
+.game-head h3 {
+	margin-top: 20px;
+	text-align: center;
+	color: #eee;
+}
+
+.grid {
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-wrap: wrap;
+	border: solid 1px;
+	width: 300px;
+	height: 300px;
+	box-sizing: initial;
+}
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+
+.shooter {
+	background: url('../img/nave.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.invader {
+	background: url('../img/invader.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	border-radius: 10px;
+}
+
+.boom {
+	background: url('../img/boom.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.laser {
+	background: url('../img/laser.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.buttons {
+}
+.btn {
+	padding: 10px 20px;
+	min-width: 120px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+}
+.btn.play {
+	background: rgb(44, 214, 67);
+}
+.btn.play:hover {
+	background: rgb(37, 182, 56);
+}
+.btn.again {
+	background: rgb(57, 161, 209);
+}
+.btn.again:hover {
+	background: rgb(47, 135, 175);
+}
