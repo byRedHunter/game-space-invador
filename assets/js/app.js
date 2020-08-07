@@ -218,8 +218,11 @@ function main() {
 		for (let i = 0; i <= alienInvaders.length - 1; i++) {
 			// i > 25
 			if (alienInvaders[i] > squares.length - (width - 1)) {
-				resultDisplay.textContent = 'Game Over'
-				clearInterval(invaderId)
+				/* resultDisplay.textContent = 'Game Over'
+				clearInterval(invaderId) */
+				swal('Game Over!', 'You are a bad player 😔', 'error')
+
+				cleanSpace()
 			}
 		}
 
